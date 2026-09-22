@@ -1,0 +1,53 @@
+{
+  "id": "activite-1",
+  "title": "Activite 1 : le bilan comptable",
+  "instructions": "Le bilan comptable presente ce que possede l'entreprise (actif) et ce qu'elle doit (passif) a une date donnee. Pour chaque element, indique s'il appartient a l'actif ou au passif.",
+  "passScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Un local commercial appartenant a l'entreprise se classe dans :",
+      "options": ["L'actif", "Le passif", "Le compte de resultat", "Aucune des reponses"],
+      "correctIndex": 0,
+      "explanation": "Un local est un bien possede par l'entreprise : c'est un element d'actif, plus precisement une immobilisation."
+    },
+    {
+      "id": "q2",
+      "prompt": "Un emprunt bancaire contracte par l'entreprise se classe dans :",
+      "options": ["L'actif", "Le passif", "Les produits", "Les charges"],
+      "correctIndex": 1,
+      "explanation": "Un emprunt est une dette envers la banque : il figure au passif, dans les dettes financieres."
+    },
+    {
+      "id": "q3",
+      "prompt": "Les capitaux propres representent :",
+      "options": [
+        "Ce que l'entreprise possede en tresorerie uniquement",
+        "Les ressources apportees par les proprietaires et les benefices non distribues",
+        "Les dettes envers les fournisseurs",
+        "Le chiffre d'affaires de l'annee"
+      ],
+      "correctIndex": 1,
+      "explanation": "Les capitaux propres regroupent le capital social et les resultats accumules non distribues aux proprietaires."
+    },
+    {
+      "id": "q4",
+      "prompt": "Une creance client (montant du par un client) se classe dans :",
+      "options": ["L'actif", "Le passif", "Les charges", "Les capitaux propres"],
+      "correctIndex": 0,
+      "explanation": "Une creance client est un montant que l'entreprise doit recevoir : c'est donc un element d'actif."
+    },
+    {
+      "id": "q5",
+      "prompt": "L'equation fondamentale du bilan s'ecrit :",
+      "options": [
+        "Actif = Passif",
+        "Actif = Charges - Produits",
+        "Passif = Produits - Charges",
+        "Actif + Passif = 0"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le bilan est toujours equilibre : le total de l'actif est egal au total du passif (dettes plus capitaux propres)."
+    }
+  ]
+}

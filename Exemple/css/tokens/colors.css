@@ -1,0 +1,88 @@
+/* Palette du design system ADRAR Formation (Design System CSS ADRAR/readme.md).
+   Fond prune des diapositives, ruban corail, quadrants du logo (bleu, orange,
+   rouge, vert), cartes "papier quadrille". Les alias semantiques ci-dessous
+   sont ceux consommes par les composants du module (css/components, css/layout,
+   css/base, css/typography) : changer les valeurs de base suffit a reparametrer
+   tout le visuel. */
+:root {
+  /* --- Base (ADRAR) --- */
+  --color-plum-900: #2f1729;
+  --color-plum-700: #4a1f43;
+  --color-plum: #5f2756;
+  --color-plum-300: #855679;
+  --color-plum-100: #e6d9e3;
+
+  --color-coral: #e14b56;
+  --color-coral-dark: #b83540;
+  --color-coral-light: #fbe2e3;
+  --color-coral-vivid: #ff8b93; /* variante eclaircie, lisible sur fond prune (ratio AA) */
+
+  --color-sky: #5dc2ee;
+  --color-sky-light: #e4f5fc;
+  --color-amber: #f7a60f;
+  --color-amber-light: #fdecd2;
+  --color-tomato: #e94c39;
+  --color-tomato-light: #fbe1dd;
+  --color-tomato-dark: #b83324; /* texte accessible sur fond tomato-light */
+  --color-leaf: #8bc04c;
+  --color-leaf-light: #eaf4de;
+  --color-leaf-dark: #4a7024; /* texte accessible sur fond leaf-light */
+
+  --color-paper: #fdfbf8;
+  --color-paper-line: #e7e2df;
+
+  --color-ink: #2a2430;
+  --color-ink-soft: #6b6270;
+  --color-white: #ffffff;
+
+  /* --- Alias semantiques (consommes par les composants) --- */
+
+  /* Chrome de l'application (topbar, sidebar, footer) : theme sombre prune */
+  --color-bg: var(--color-plum);
+  --color-surface: var(--color-plum-900);
+  --color-surface-alt: var(--color-plum-700);
+  --color-border: var(--color-plum-700);
+  --color-border-strong: var(--color-plum-300);
+  --color-text: var(--color-white);
+  --color-text-muted: var(--color-plum-100);
+  --color-text-inverse: var(--color-white);
+
+  /* Accent principal : ruban corail */
+  --color-primary: var(--color-coral);
+  --color-primary-dark: var(--color-coral-dark);
+  --color-primary-light: var(--color-coral-light);
+
+  /* Accent secondaire : orange du logo (touches ponctuelles) */
+  --color-accent: var(--color-amber);
+  --color-accent-light: var(--color-amber-light);
+
+  /* Etats, empruntes aux quadrants du logo */
+  --color-success: var(--color-leaf);
+  --color-success-light: var(--color-leaf-light);
+  --color-success-text: var(--color-leaf-dark);
+  --color-error: var(--color-tomato);
+  --color-error-light: var(--color-tomato-light);
+  --color-error-text: var(--color-tomato-dark);
+  --color-info: var(--color-sky);
+  --color-info-light: var(--color-sky-light);
+
+  --color-focus: var(--color-primary);
+
+  /* Corail eclairci pour le texte accentue sur fond sombre (ex. .eyebrow) :
+     le corail de marque (--color-primary) est trop proche du prune en
+     luminosite pour du texte fin, cf. rapport de contraste. */
+  --color-primary-text: var(--color-coral-vivid);
+}
+
+/* Cartes de contenu : theme clair "papier quadrille" (readme.md > guidelines/card-texture).
+   Toute la sous-arborescence d'une .card (callouts, tableaux, quiz, listes de
+   definitions) herite automatiquement de ce theme via les memes alias. */
+.card {
+  --color-surface: var(--color-paper);
+  --color-surface-alt: var(--color-plum-100);
+  --color-border: var(--color-paper-line);
+  --color-border-strong: var(--color-plum-300);
+  --color-text: var(--color-ink);
+  --color-text-muted: var(--color-ink-soft);
+  --color-primary-text: var(--color-coral);
+}

@@ -1,0 +1,28 @@
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Echelle de rayons ADRAR : grands rayons "post-it" sur les cartes de contenu. */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-round: 999px;
+
+  /* Ombres teintees prune (ADRAR), pour detacher la carte du fond sombre. */
+  --shadow-sm: 0 4px 14px -4px rgba(47, 23, 41, 0.25);
+  --shadow-md: 0 10px 24px -8px rgba(47, 23, 41, 0.30);
+  --shadow-card: 0 18px 40px -12px rgba(47, 23, 41, 0.35);
+  --shadow-lg: var(--shadow-card);
+
+  --border-width: 1px;
+
+  --container-max: 960px;
+  --sidebar-width: 260px;
+  --topbar-height: 64px;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="MANIFEST-BASES-COMPTABILITE"
+          version="1.2"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                              http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+
+  <organizations default="ORG-BASES-COMPTABILITE">
+    <organization identifier="ORG-BASES-COMPTABILITE">
+      <title>Bases de la comptabilite</title>
+      <item identifier="ITEM-MODULE" identifierref="RES-MODULE">
+        <title>Bases de la comptabilite</title>
+      </item>
+    </organization>
+  </organizations>
+
+  <resources>
+    <resource identifier="RES-MODULE" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" />
+      <file href="imsmanifest.xml" />
+
+      <file href="css/main.css" />
+      <file href="css/tokens/colors.css" />
+      <file href="css/tokens/spacing.css" />
+      <file href="css/tokens/motion.css" />
+      <file href="css/base/reset.css" />
+      <file href="css/base/base.css" />
+      <file href="css/typography/typography.css" />
+      <file href="css/layout/layout.css" />
+      <file href="css/components/navigation.css" />
+      <file href="css/components/buttons.css" />
+      <file href="css/components/cards.css" />
+      <file href="css/components/progress.css" />
+      <file href="css/components/quiz.css" />
+
+      <file href="js/vendor/lucide.min.js" />
+      <file href="js/icons.js" />
+      <file href="js/scorm-api.js" />
+      <file href="js/navigation.js" />
+      <file href="js/quiz.js" />
+      <file href="js/app.js" />
+
+      <file href="pages/introduction.html" />
+      <file href="pages/activite-1.html" />
+      <file href="pages/activite-2.html" />
+      <file href="pages/activite-3.html" />
+      <file href="pages/pourcentage.html" />
+
+      <file href="db/content.json" />
+      <file href="db/quiz-activite-1.json" />
+      <file href="db/quiz-activite-2.json" />
+      <file href="db/quiz-activite-3.json" />
+    </resource>
+  </resources>
+</manifest>

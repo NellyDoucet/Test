@@ -1,0 +1,99 @@
+/* Typographie du design system ADRAR : aucune police n'a pu etre extraite du
+   PDF source (texte vectorise). Substitution Google Fonts (Design System CSS
+   ADRAR/tokens/typography.css) : Poppins pour les titres et les numeros de
+   chapitre, Source Sans 3 pour le corps de texte. A remplacer par les polices
+   d'origine si elles deviennent disponibles. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+:root {
+  --font-family-display: "Poppins", "Segoe UI", Arial, Helvetica, sans-serif;
+  --font-family-base: "Source Sans 3", "Segoe UI", Arial, Helvetica, sans-serif;
+  --font-family-mono: "Consolas", "Courier New", monospace;
+
+  --font-size-xs: 0.8125rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.1875rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.25rem;
+  --font-size-chapter: 3.5rem;
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.55;
+  --line-height-loose: 1.8;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-3);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-2);
+}
+
+p {
+  margin-bottom: var(--space-4);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: var(--font-weight-semibold);
+}
+
+small,
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.eyebrow {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-primary-text);
+}
+
+code {
+  font-family: var(--font-family-mono);
+  font-size: 0.9em;
+  background-color: var(--color-surface-alt);
+  padding: 0.1em 0.4em;
+  border-radius: var(--radius-sm);
+}

@@ -1,0 +1,24 @@
+/* Point d'entree unique de tous les styles du module. */
+
+/* Jetons de design */
+@import url("tokens/colors.css");
+@import url("tokens/spacing.css");
+@import url("tokens/motion.css");
+@import url("tokens/patterns.css");
+
+/* Base */
+@import url("base/reset.css");
+@import url("base/base.css");
+
+/* Typographie */
+@import url("typography/typography.css");
+
+/* Mise en page */
+@import url("layout/layout.css");
+
+/* Composants */
+@import url("components/navigation.css");
+@import url("components/buttons.css");
+@import url("components/cards.css");
+@import url("components/progress.css");
+@import url("components/quiz.css");

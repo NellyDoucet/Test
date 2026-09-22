@@ -1,0 +1,11 @@
+:root {
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-toast: 300;
+}

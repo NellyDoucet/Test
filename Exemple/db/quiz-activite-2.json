@@ -1,0 +1,43 @@
+{
+  "id": "activite-2",
+  "title": "Activite 2 : debit ou credit",
+  "instructions": "En comptabilite en partie double, chaque operation touche au moins deux comptes : un debit et un credit de montants egaux. Determine si chaque situation correspond a un debit ou a un credit du compte concerne.",
+  "passScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "L'entreprise achete du materiel et paie comptant. Le compte Materiel est :",
+      "options": ["Debite", "Credite"],
+      "correctIndex": 0,
+      "explanation": "Une augmentation d'actif se traduit par un debit. Le compte Materiel augmente, il est donc debite."
+    },
+    {
+      "id": "q2",
+      "prompt": "L'entreprise regle une dette envers un fournisseur. Le compte Banque est :",
+      "options": ["Debite", "Credite"],
+      "correctIndex": 1,
+      "explanation": "La banque diminue puisque de l'argent sort de l'entreprise : le compte Banque est credite."
+    },
+    {
+      "id": "q3",
+      "prompt": "L'entreprise encaisse une vente au comptant. Le compte Ventes est :",
+      "options": ["Debite", "Credite"],
+      "correctIndex": 1,
+      "explanation": "Les produits augmentent le resultat par un credit : le compte Ventes est credite."
+    },
+    {
+      "id": "q4",
+      "prompt": "L'entreprise recoit une facture de loyer non encore payee. Le compte Charges de loyer est :",
+      "options": ["Debite", "Credite"],
+      "correctIndex": 0,
+      "explanation": "Une charge qui augmente est enregistree au debit : le compte Charges de loyer est debite."
+    },
+    {
+      "id": "q5",
+      "prompt": "L'entreprise emprunte de l'argent a la banque. Le compte Emprunts (passif) est :",
+      "options": ["Debite", "Credite"],
+      "correctIndex": 1,
+      "explanation": "Une augmentation de passif se traduit par un credit : le compte Emprunts est credite."
+    }
+  ]
+}

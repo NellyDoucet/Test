@@ -1,0 +1,7 @@
+/* Motif "papier quadrille" des cartes de contenu (Design System CSS ADRAR /
+   tokens/patterns.css). Applique en fond de .card, voir css/components/cards.css. */
+:root {
+  --pattern-graph-paper: linear-gradient(var(--color-paper-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-paper-line) 1px, transparent 1px);
+  --pattern-graph-paper-size: 22px 22px;
+}

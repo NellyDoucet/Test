@@ -1,0 +1,128 @@
+.card {
+  background-color: var(--color-surface);
+  background-image: var(--pattern-graph-paper);
+  background-size: var(--pattern-graph-paper-size);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-card);
+  /* Re-declarer color (pas seulement la custom property) pour que le
+     theme clair de la carte soit reellement herite par ses descendants :
+     color n'est fixe qu'une fois sur body, donc sans cette ligne les
+     enfants gardent la couleur calculee sur body (theme sombre). */
+  color: var(--color-text);
+}
+
+.card + .card {
+  margin-top: var(--space-4);
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.card__header .icon {
+  color: var(--color-primary);
+}
+
+.callout {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: var(--border-width) solid var(--color-border);
+  background-color: var(--color-surface-alt);
+  margin-bottom: var(--space-4);
+}
+
+.callout .icon {
+  flex-shrink: 0;
+  color: var(--color-info);
+}
+
+/* Ces variantes gardent toujours un fond clair (teinte info/accent),
+   qu'elles soient placees dans une carte "papier" ou directement sur le
+   fond sombre de l'application : le texte reste donc toujours fonce,
+   independamment du theme (clair/sombre) herite du contexte. */
+.callout-info {
+  background-color: var(--color-info-light);
+  border-color: var(--color-info);
+  color: var(--color-ink);
+}
+
+.callout-info .icon {
+  color: var(--color-info);
+}
+
+.callout-accent {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
+  color: var(--color-ink);
+}
+
+.callout-accent .icon {
+  color: var(--color-accent);
+}
+
+.definition-list {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) 1fr;
+  gap: var(--space-3) var(--space-4);
+}
+
+.definition-list dt {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-dark);
+}
+
+.definition-list dd {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.equation-box {
+  text-align: center;
+  padding: var(--space-5);
+  background-color: var(--color-primary-light);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-dark);
+  margin: var(--space-4) 0;
+}
+
+.data-table {
+  margin: var(--space-4) 0;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.data-table th,
+.data-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: var(--border-width) solid var(--color-border);
+  font-size: var(--font-size-sm);
+}
+
+.data-table th {
+  background-color: var(--color-surface-alt);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.04em;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table td.is-numeric {
+  text-align: right;
+  font-family: var(--font-family-mono);
+}

@@ -1,0 +1,41 @@
+{
+  "moduleTitle": "Bases de la comptabilite",
+  "moduleIcon": "book-open-check",
+  "pages": [
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "icon": "info",
+      "file": "pages/introduction.html",
+      "type": "lecture"
+    },
+    {
+      "id": "activite-1",
+      "title": "Activite 1 : le bilan comptable",
+      "icon": "scale",
+      "file": "pages/activite-1.html",
+      "type": "quiz"
+    },
+    {
+      "id": "activite-2",
+      "title": "Activite 2 : debit ou credit",
+      "icon": "arrow-left-right",
+      "file": "pages/activite-2.html",
+      "type": "quiz"
+    },
+    {
+      "id": "activite-3",
+      "title": "Activite 3 : le compte de resultat",
+      "icon": "calculator",
+      "file": "pages/activite-3.html",
+      "type": "quiz"
+    },
+    {
+      "id": "pourcentage",
+      "title": "Cours : les pourcentages",
+      "icon": "percent",
+      "file": "pages/pourcentage.html",
+      "type": "lecture"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "activite-3",
+  "title": "Activite 3 : le compte de resultat",
+  "instructions": "Le compte de resultat mesure la performance de l'entreprise sur une periode en comparant les produits et les charges. Reponds aux questions suivantes pour verifier ta comprehension.",
+  "passScore": 70,
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Le resultat net de l'exercice se calcule par :",
+      "options": [
+        "Total des produits moins total des charges",
+        "Total de l'actif moins total du passif",
+        "Total des charges moins total des produits",
+        "Capitaux propres divises par le total de l'actif"
+      ],
+      "correctIndex": 0,
+      "explanation": "Le resultat de l'exercice correspond a la difference entre les produits generes et les charges engagees sur la periode."
+    },
+    {
+      "id": "q2",
+      "prompt": "Si les produits sont de 85000 et les charges de 62000, le resultat de l'exercice est :",
+      "options": ["23000 de benefice", "23000 de perte", "147000 de benefice", "62000 de benefice"],
+      "correctIndex": 0,
+      "explanation": "85000 moins 62000 egale 23000. Comme les produits depassent les charges, il s'agit d'un benefice."
+    },
+    {
+      "id": "q3",
+      "prompt": "Les salaires verses aux employes sont classes comme :",
+      "options": ["Un produit d'exploitation", "Une charge d'exploitation", "Un element du passif uniquement", "Un actif immobilise"],
+      "correctIndex": 1,
+      "explanation": "Les salaires sont une ressource consommee pour l'activite : ce sont des charges d'exploitation (charges de personnel)."
+    },
+    {
+      "id": "q4",
+      "prompt": "Un resultat negatif (charges superieures aux produits) est appele :",
+      "options": ["Un benefice", "Une perte", "Un actif", "Un capital"],
+      "correctIndex": 1,
+      "explanation": "Lorsque les charges depassent les produits, l'entreprise degage une perte sur la periode."
+    },
+    {
+      "id": "q5",
+      "prompt": "Le chiffre d'affaires correspond a :",
+      "options": [
+        "Le total des dettes de l'entreprise",
+        "La valeur des ventes de biens ou services realisees",
+        "Le solde du compte bancaire en fin d'annee",
+        "Le montant des capitaux propres"
+      ],
+      "correctIndex": 1,
+      "explanation": "Le chiffre d'affaires est le montant total des ventes de biens ou de services realisees par l'entreprise sur la periode."
+    }
+  ]
+}
